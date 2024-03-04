@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #e1e1e1;
+  margin: 10px;
+}
+
+#head {
+  display: block;
+  height: 100px;
+  background-color: #222;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+#login {
+  flex: 1 200px;
+  background-color: #222;
+}
+
+aside {
+  flex: 2;
+  background-color: #222;
+}
+
+#register {
+  height: 100vh;
+  margin-bottom: 20px;
+  background-color: #222;
+}
+
+footer {
+  height: 20vh;
+  background-color: #222;
+}
+
+@media (width < 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  #login {
+    flex: 1 50px;
+  }
+
+  #register {
+    height: 50vh;
+  }
+
+  footer {
+    height: 14vh;
+  }
+}
